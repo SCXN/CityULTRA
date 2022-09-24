@@ -1,0 +1,44 @@
+extends layout
+block content
+    header
+        include nav
+        include headerText
+    section.relative.sBB.container-fluid.w1.flex.flexCol.flexAlignCenter.pt-0.pb-0.px-lg-5.based.reverseBased
+        article#top.row.wB.w1.maxed.sBS.my-0.mb-0.mb-lg-0.mt-0.p-3.p-lg-5.mx-0
+            h3.col-12.textAlignCenter.f4.caps.bM.exJr Weekly Events
+            <!-- row 1 | Comedy -->
+            div.d-block.d-md-none.mt-5.mb-0.px-1.col-12.col-md-6.sC
+                h3.col-12.textAlignCenter.f4.caps.mM.exJr Stand-up Comedy
+                h5.i.f6.sM.textAlignCenter Tuesdays 7p-10p
+                p.mt-2.col-12.px-0.px-md-4.lH2.dwarf Nestled in charming downtown Port Angeles WA, CityULTRA serves as the premier frontend for go-to nightspots.
+            div.mt-0.my-md-5.px-1.col-12.col-md-6
+                img(src='https://images.unsplash.com/photo-1610308479130-5141d71ba6e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80' alt='Photo of Comedy Night Tuesdays at CityULTRA, Port Angeles WA').fB.bullNosed.eventsImgs.m-0
+            div.d-none.d-md-flex.my-5.px-1.col-12.col-md-6.sC
+                h3.col-12.textAlignCenter.f4.caps.mM.exJr Stand-up Comedy
+                h5.i.f6.sM Tuesdays 7p-10p
+                p.mt-2.col-12.px-0.px-md-4.lH2.dwarf Nestled in charming downtown Port Angeles WA, CityULTRA serves as the premier frontend for go-to nightspots.
+            <!-- row 2 | Karaoke -->
+            div.mt-5.mt-md-0.mb-0.mb-md-5.px-1.col-12.col-md-6.sC
+                h3.col-12.textAlignCenter.f4.caps.mM.exJr Karaoke
+                h5.i.f6.sM Wednesdays 7p-11p
+                p.mt-2.col-12.px-0.px-md-4.lH2.dwarf Nestled in charming downtown Port Angeles WA, CityULTRA serves as the premier frontend for go-to nightspots.
+            div.m-0.mb-md-5.px-1.col-12.col-md-6   
+                img(src='https://images.unsplash.com/photo-1561264974-153c4dacddd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='Photo of Karaoke Night Wednesdays at CityULTRA, Port Angeles WA').fB.bullNosed.eventsImgs
+            <!-- row 3 | Open-mic -->
+            div.d-block.d-md-none.mt-5.mb-0.px-1.col-12.col-md-6.sC
+                h3.col-12.textAlignCenter.f4.caps.mM.exJr Open-mic
+                h5.i.f6.sM.textAlignCenter Sundays 6p-10p
+                p.mt-2.col-12.px-0.px-md-4.lH2.dwarf Nestled in charming downtown Port Angeles WA, CityULTRA serves as the premier frontend for go-to nightspots.
+            div.mt-0.mb-5.mb-md-5.px-1.col-12.col-md-6   
+                img(src='https://images.unsplash.com/photo-1483101974978-cf266fdf1139?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80' alt='Photo of Open-mic Night Sundays at CityULTRA, Port Angeles WA').fB.bullNosed.eventsImgs
+            div.d-none.d-md-flex.mb-5.px-1.col-12.col-md-6.sC
+                h3.col-12.textAlignCenter.f4.caps.mM.exJr Open-mic
+                h5.i.f6.sM Sundays 6p-10p
+                p.mt-2.col-12.px-0.px-md-4.lH2.dwarf Nestled in charming downtown Port Angeles WA, CityULTRA serves as the premier frontend for go-to nightspots.
+            <!-- row 4 | Calendar -->
+            item#calendar
+            margin.col-12.py-3.py-md-5.mb-4
+            include launcher
+            include getHere
+    include footer
+    include ultimate

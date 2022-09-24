@@ -1,0 +1,9 @@
+modal#myModal.modals
+    img()#img01.modalImg.modal-content
+    div.galleryImgCaptions 
+        != newsTitles[index]
+    div.galleryImgDates 
+        != newsDates[index]
+    div.sharesCase.pt-5.px-4
+        h2.diminutive.tW.caps.exJr.w1.textAlignCenter Share this item:
+        include shareNews

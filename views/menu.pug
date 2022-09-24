@@ -1,0 +1,28 @@
+extends layout
+block content
+    header
+        include nav
+        include headerText
+    section.relative.sBB.container-fluid.w1.flex.flexCol.flexAlignCenter.pt-0.pb-0.px-lg-5.based.reverseBased
+        article.row.wB.w1.maxed.sBS.my-0.mb-0.mb-lg-0.mt-0.p-3.p-lg-5.mx-0
+            margin#top.col-12.py-2.py-md-5.my-md-3
+            margin.d-none.d-md-block.col-2.mb-3
+            ul.nav.flex.flexJustifySplay.noFlexWrap.col-12.col-md-8.mb-5
+                li.sC.my-5.pt-5
+                    a()#eatToggle.py-3.px-4.bullNosed.f2.i.sM.pointer.current Eats
+                li.flex.sC.mt-0.pt-0.wash1
+                    img(src='/projects/CityULTRA/images/dolphy.png')#menuDolphy.menuDolphy.invert.w4
+                li.sC.my-5.pt-5
+                    a()#drinkToggle.py-3.px-4.bullNosed.f2.i.sM.pointer  Drinks
+            margin.d-none.d-md-block.col-2.mb-3
+            div#collapseEat.col-12.row.p-0.m-0
+                include eat
+            div#drink.col-12.row.p-0.m-0
+                include drink
+            margin.col-12.py-3.py-md-5.mb-4
+            include launcher
+            include getHere
+    include menuSpy
+    include footer
+    include ultimate
+    margin.py-3.bB.w1

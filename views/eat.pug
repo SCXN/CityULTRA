@@ -1,0 +1,72 @@
+a#burgers
+img(src='https://images.unsplash.com/photo-1585730315692-5252e57d4b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80' style='height: 27vh; min-height: 100px;' alt='photo of our insane burgers.  These go down real easy, friend').fB.mt-1.mb-4
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.mb-3 Sandwiches & Burgers
+margin.d-none.d-sm-block.col-sm-2
+p.mt-2.col-12.col-sm-8.px-0.px-md-4.dwarf.lH2.textAlignCenter Because we love andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon.
+margin.d-none.d-sm-block.col-sm-2
+each burger, index in burgersBodies
+    div.col-16.col-sm-6.col-md-4.pb-0.mb-0
+        div.menuHeadings.flex.pb-0.mb-0
+            h2.memuTitles.f4.sM.w1.pb-0.mb-0
+                != burgersTitles[index]
+            h6.menuPrices.f4.sM.textAlignRight.py-0.my-0
+                != burger
+        div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
+            != burger
+a#bentos
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.pt-1.mb-3 Bentos
+margin.d-none.d-sm-block.col-sm-2
+p.mt-2.col-12.col-sm-8.px-0.px-md-4.dwarf.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+margin.d-none.d-sm-block.col-sm-2
+each box, index in bentosBodies
+    div.col-16.col-sm-6.col-md-4.pb-0.mb-0
+        div.menuHeadings.flex.pb-0.mb-0
+            h2.memuTitles.f4.sM.w1.pb-0.mb-0
+                != bentosTitles[index]
+            h6.menuPrices.f4.sM.textAlignRight.py-0.my-0
+                != box
+        div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
+            != box
+a.mt-5#pizza
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Pizza 
+p.mt-2.col-12.initial.px-0.px-md-4.dwarf.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. 
+p.mt-2.col-12.f2.px-0.px-md-4.diminutive.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. 
+p.mt-2.col-12.initial.px-0.px-md-4.dwdiminutivearf.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. 
+a#pupus.mt-5
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Pupus
+p.mt-2.col-12.col-sm-9.col-md-6.initial.px-0.px-md-4.dwarf.lH2 Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+each pupu, index in pupusBodies
+    div.col-16.col-sm-6.col-md-4.pb-0.mb-0
+        div.menuHeadings.flex.pb-0.mb-0
+            h2.memuTitles.f4.sM.w1.pb-0.mb-0
+                != pupusTitles[index]
+            h6.menuPrices.f4.sM.textAlignRight.py-0.my-0
+                != pupu
+        div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
+            != pupu
+a#slaws
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Slaws
+p.mt-2.col-12.initial.px-0.px-md-4.dwarf.lH2 Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+each slaw, index in slawsBodies
+    div.col-16.col-sm-6.col-md-4.pb-0.mb-0
+        div.menuHeadings.flex.pb-0.mb-0
+            h2.memuTitles.f4.sM.w1.pb-0.mb-0
+                != slawsTitles[index]
+            h6.menuPrices.f4.sM.textAlignRight.py-0.my-0
+                != slaw
+        div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
+            != slaw
+a#fritters
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Fritters
+p.mt-2.col-12.initial.px-0.px-md-4.dwarf.lH2 Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+img(src='https://images.unsplash.com/photo-1601736461246-e690e5cc2bac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80' style='height: 15vh; min-height: 100px;' alt='photo of our awesome mouth-watering fritters—golden brown sin').fB.mt-1.mb-4
+each fritter, index in frittersBodies
+    div.col-16.col-sm-6.col-md-4.pb-0.mb-0
+        div.menuHeadings.flex.pb-0.mb-0
+            h2.memuTitles.f4.sM.w1.pb-0.mb-0
+                != frittersTitles[index]
+            h6.menuPrices.f4.sM.textAlignRight.py-0.my-0
+                != fritter
+        div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
+            != fritter
+margin.col-12.py-5

@@ -1,0 +1,12 @@
+menu#menuSpy.clear.keyedOffHerAss
+    div.sweet.clear.sideScroll
+        ul#eatMenu.nav.d-sm-flex.sexy.clear.flex.flexRow.flexJustifySplay.noFlexWrap.showFlex
+            -let menuHeadings=['Burgers', 'Bentos', 'Pizza','Pupus','slaws','Fritters','Happy Hour','Drafts','Mondays','Tuesdays', 'Wednesdays','Thursdays','Fridays','Saturdays','Sundays']
+            each menuHeading, index in menuHeadings
+                li.nav-item.py-0.ms-1.my-0.me-1
+                    a(href=`#${menuHeading.toLowerCase().split(' ').join('')}`).nav-link.diminutive.mS.p-1.m-0.f4.caps.exJr3.nW=menuHeading
+        ul#drinkMenu.nav.d-sm-flex.sexy.clear.flex.flexRow.flexJustifySplay.noFlexWrap.hide
+            -let menuHeadingsEat=['Happy Hour','Drafts','Mondays','Tuesdays', 'Wednesdays','Thursdays','Fridays','Saturdays','Sundays']
+            each menuHeading, index in menuHeadingsEat
+                li.nav-item.py-0.ms-1.my-0.me-1
+                    a(href=`#${menuHeading.toLowerCase().split(' ').join('')}`).nav-link.diminutive.mS.p-1.m-0.f4.caps.exJr3.nW=menuHeading

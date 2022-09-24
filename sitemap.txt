@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://scxn.github.io/projects/cityUltra/</loc>
+        <lastmod>2022-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>2</priority>
+    </url>
+    <url>
+        <loc>http://scxn.github.io/projects/cityUltra/menu</loc>
+        <lastmod>2022-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>http://scxn.github.io/projects/cityUltra/events</loc>
+        <lastmod>2022-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>3</priority>
+    </url>
+    <url>
+        <loc>http://scxn.github.io/projects/cityUltra/gallery</loc>
+        <lastmod>2022-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>4</priority>
+    </url>
+    <url>
+        <loc>http://scxn.github.io/projects/cityUltra/booking</loc>
+        <lastmod>2022-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>5</priority>
+    </url>
+</urlset>
