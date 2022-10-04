@@ -45,6 +45,7 @@ i.f6.i{
         height: 100%;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-end;
     }
     span#thisIsADemoReturnHomeLogoCase{
         display: flex;

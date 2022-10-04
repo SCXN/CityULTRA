@@ -14,10 +14,11 @@ each burger, index in burgersBodies
         div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
             != burger
 a#bentos
-h3.col-12.textAlignCenter.f4.caps.bM.exJr.pt-1.mb-3 Bentos
+h3.col-12.textAlignCenter.f4.caps.bM.exJr.pt-1.mb-3.relative.top.wS Bentos
 margin.d-none.d-sm-block.col-sm-2
-p.mt-2.col-12.col-sm-8.px-0.px-md-4.dwarf.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
-margin.d-none.d-sm-block.col-sm-2
+p.mt-2.col-12.col-sm-8.px-0.px-md-4.dwarf.lH2.textAlignCenter.relative.top.wS When mouth-watering tri-tip landjaeger andouille. Turkey porchetta jerky kielbasa, buffalo venison leberkas ham flank meatloaf. Pig ribeye andouille fatback. Venison ground round corned beef or bacon bits.
+margin.d-none.d-sm-block.col-sm-2.relative
+    img(src='/projects/CityULTRA/images/bento.png').bento
 each box, index in bentosBodies
     div.col-16.col-sm-6.col-md-4.pb-0.mb-0
         div.menuHeadings.flex.pb-0.mb-0
@@ -28,13 +29,35 @@ each box, index in bentosBodies
         div.menuWriteUps.diminutive.lH1.mt-0.pt-2.pb-2
             != box
 a.mt-5#pizza
-h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Pizza 
-p.mt-2.col-12.initial.px-0.px-md-4.dwarf.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. 
-p.mt-2.col-12.f2.px-0.px-md-4.diminutive.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. 
-p.mt-2.col-12.initial.px-0.px-md-4.dwdiminutivearf.lH2.textAlignCenter Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. 
+div.pizzaCase.relative
+    h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3.relative.top Pizza 
+    p.mt-2.mb-0.py-0.col-12.f3.px-0.px-md-4.dwarf.lH2.textAlignCenter.relative.top  Let us know how you like your crust:  Lightly done, medium or extra done.
+    img(src='/projects/CityULTRA/images/basil.png').basil
+div.col-12.col-sm-6.py-3.my-0
+div#pizzaGrid.flexJustifyCenter.relative
+    -let pizzaSizes=['XS','S','M','XM','L','XL','XXL',]
+    -let pizzaPrizes=['$6.50','$9','$11','$15','$20','$27','$33']
+    each pizzaSize in pizzaSizes 
+        p.sC.f4.sM=pizzaSize
+    each pizzaPrize in pizzaPrizes 
+        p.sC.f3.i.dwarf=pizzaPrize
+div.col-12.col-sm-5.py-3.my-0
+    h3.col-12.textAlignCenter.f4.caps.sM.exJr.pt-0.mb-3 Unlimited Toppings
+    p.mt-2.px-0.px-md-4.dwarf.lH2.textAlignCenter Pig | bacon | ham | pancetta | sirloin | meatloaf | turkey | meaty | filet mignon | beef ham | pork fish | tuna beef | kielbasa | t-bone | tail
+div.col-12.col-sm-2.py-3.my-0
+    a(href="tel:+13604775426" style='color: red;').sC.h100.w1.nT.noDecoration
+        i.fa-solid.fa-phone.bM.titleRight
+div.col-12.col-sm-5.py-3.my-0
+    h3.col-12.textAlignCenter.f4.caps.sM.exJr.pt-0.mb-3 Upgrades +$3 each 
+    p.mt-2.px-0.px-md-4.dwarf.lH2.textAlignCenter Fetta | ricotta | avocado | party balls | glitter | confetti | smiles | love | kisses | quadruple cheese | fired-up | slammed | lifted | boosted | royale | a la mode | upside-down | double-crust
+h3.col-12.f4.textAlignCenter.caps.dwarf.exJr2.pt-0.mb-3 Choose your sauce/s
+    p.f3.lower.dwarf.exClear Chocolate | Red | pesto | white | curry | ranch | nacho | bbq
+p.mt-2.col-12.px-0.px-md-4.dwarf.lH2.textAlignCenter You choose exaclty how you want the tongue doner biltong. Kielbasa pork loin shoulder pastrami boudin ribeye venison sirloin turkey chicken burgdoggen short loin doner beef ribs pork. Ham biltong burgdoggen, ribeye jowl pork loin meatball pig venison brisket.
+p.mt-2.col-12.f2.px-0.px-md-4.diminutive.lH2.textAlignCenter  Always remember that frankfurter hamburger tri-tip filet mignon doner bresaola rump short loin fatback.  Pork chop.  Thank you!
+
 a#pupus.mt-5
 h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Pupus
-p.mt-2.col-12.col-sm-9.col-md-6.initial.px-0.px-md-4.dwarf.lH2 Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+p.mt-2.col-12.col-sm-9.col-md-6.initial.px-0.px-md-4.dwarf.lH2 We've become rather well-known for our pupus boudin pork belly alcatra frankfurter swine. Burgdoggen sirloin prosciutto pork loin meatloaf meatball picanha strip.  Binge all to yourself or share with us!  As always. your choice.
 each pupu, index in pupusBodies
     div.col-16.col-sm-6.col-md-4.pb-0.mb-0
         div.menuHeadings.flex.pb-0.mb-0
@@ -46,10 +69,10 @@ each pupu, index in pupusBodies
             != pupu
 a#slaws
 h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Slaws
-p.mt-2.col-12.initial.px-0.px-md-4.dwarf.lH2 Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+p.mt-2.col-12.px-0.px-md-4.dwarf.lH2 Trying to keep it light-n-healthy?  Then stay the hell away from our slaws bacon venison sausage.  Pork loin pancetta drumstick porchetta all over the place plus hamburger pork belly too good to refuse.
 each slaw, index in slawsBodies
     div.col-16.col-sm-6.col-md-4.pb-0.mb-0
-        div.menuHeadings.flex.pb-0.mb-0
+        div.menuHeadings.flex.flexRow.flexAlignStart
             h2.memuTitles.f4.sM.w1.pb-0.mb-0
                 != slawsTitles[index]
             h6.menuPrices.f4.sM.textAlignRight.py-0.my-0
@@ -58,7 +81,7 @@ each slaw, index in slawsBodies
             != slaw
 a#fritters
 h3.col-12.textAlignCenter.f4.caps.bM.exJr.mt-5.pt-1.mb-3 Fritters
-p.mt-2.col-12.initial.px-0.px-md-4.dwarf.lH2 Cupim andouille ham shank short loin landjaeger bresaola leberkas t-bone boudin. Prosciutto tail doner pig shank. Drumstick kielbasa porchetta prosciutto bacon. 
+p.mt-2.col-12.px-0.px-md-4.dwarf.lH2.initial Remember when your Grandmother told you life wasn't fair?  Well she hadn't tried our fritters.  They make everything right in this world.  Each variety comes with over-the-top ham biltong burgdoggen, ribeye jowl pork loin or your choice of turkey bacon or short loin venison pastrami bacon.
 img(src='https://images.unsplash.com/photo-1601736461246-e690e5cc2bac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80' style='height: 15vh; min-height: 100px;' alt='photo of our awesome mouth-watering fritters—golden brown sin').fB.mt-1.mb-4
 each fritter, index in frittersBodies
     div.col-16.col-sm-6.col-md-4.pb-0.mb-0

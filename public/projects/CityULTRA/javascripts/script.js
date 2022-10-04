@@ -1,3 +1,16 @@
+//fullCalendar
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+      googleCalendarApiKey:'AIzaSyDH5BQhWT7HzqadcO9pjWhTxew9eYKD1UA',
+      events:{
+          googleCalendarId:'ujjrp3haj2clujetk8ar7li94s@group.calendar.google.com',
+          className: 'gcal-event'
+      }
+    ,nitialView: 'dayGridMonth'
+  });
+  calendar.render();
+});
 // Wait for window load
 window.onload = function() {
     $(".se-pre-con").fadeOut("slow");

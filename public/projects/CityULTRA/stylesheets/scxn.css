@@ -233,7 +233,7 @@ cover{background-color: white;}
 	filter: invert(100%);
 }
 /*Positioning*/
-.relative{position: relative;}
+.relative{position: relative!important;}
 .absolute{position: absolute;}
 .fixedTop{position: fixed; top: 0px;}
 .sticky{position: sticky; top: 0;}
@@ -243,7 +243,7 @@ cover{background-color: white;}
 .flexCol{ flex-direction: column;}
 .flexRow{ flex-direction: row;}
 .flexJustifyCenter{ justify-content: center;}
-.flexAlignCenter{ align-items: center;}
+.flexAlignCenter{ align-items:center;}
 .flexAlignStart{align-items: flex-start;}
 .flexAlignEnd{align-items:flex-end;}
 .flexJustifyStart{justify-content: flex-start;}
@@ -302,7 +302,7 @@ ul.nav.grid{
 .wB{background-color: white;}/*whiteBack..*/
 .sWB{background-color: rgba(223, 201, 201, 0.6);}/*shearWhiteBackground*/
 .sBB{background-color: rgba(0, 0, 0, 0.81);}/*shearBlackBackground*/
-
+.wS{text-shadow: -1px -1px 0px white;}
 .sSBB{background-color: rgba(0, 0, 0, 0.33);}/*superShearBlackBackground*/
 .uS{background-color: rgba(223, 201, 201, 0.1);}/*ultrShear*/
 .hSWB{background-color: rgba(255, 255, 255, 0.87);}/*heavyShearWhiteBackground*/
@@ -375,7 +375,7 @@ ul.nav.grid{
 /*superHeight*/
 .sH{height: 100%;min-height: 100vh;}
 
-.top{z-index: 700}
+.top{z-index:777!important;}
 .superTop{z-index:123456789;}
 
 /*Hard spacing*/
@@ -435,6 +435,7 @@ ul.nav.grid{
 .exJr{letter-spacing:1vw;}
 .exJr2{letter-spacing:.45vw;}
 .exJr3{letter-spacing:.123em;}
+.exClear{letter-spacing:0em;}
 .diminutive{font-size: 9.99pt;}
 .dwarf{font-size: 13pt;}
 .wiener{font-size: 6pt;}.wiener.big{font-size: 6pt;}
@@ -589,11 +590,13 @@ ol{
 .dN{display: none !important;}
 .dNAdapt{display: none !important;}
 #calendar{
+	height: 100%;
 	width: 100%;
 	display: flex;
 	font-size: 13pt;
 	max-width: 100%;
-	margin: 0 auto!important;padding: 0!important;
+	margin: 0 auto!important;
+	padding: 0!important;
 }
 #map {
 	position: unset;
@@ -732,7 +735,7 @@ feature.feature{
 	right: 27px;
 	/*background-color: var(--c6);*/
 	transition: 1.2s;
-	transform: translateX(101px);
+	transform: translateY(123px);
 	/*opacity: 77%;*/
   }
   .goToTop a{
@@ -941,6 +944,7 @@ li.flex.w1.ms-0.textAlignLeft.flexJustifyLeft.i.f2{
 	.dolphy{
 		width: 1.5em;
 		height: 100%;
+		transform: translateY(7px);
 	}
 	div.special.h100.sC.relative{/*breaks at max 767px*/
 		height: unset!important;
@@ -1038,27 +1042,31 @@ display: none;
 div.sharesCase{
 	text-align: center;
 }
-.menuHeadings,
+/* .menuHeadings,
 .menuPrices{
-	height: 1em;	
-}
+	height: 2.1em;	
+} */
 .menuPrices p:last-of-type{
 	display: none;
 	height: min-content;	
 	margin: 0 auto;
 	padding: 0;
 }
-div.menuHeadings.flex.pb-0.mb-0 > h6 > p:nth-child(1){
-	height: 1em!important;
+div.menuHeadings > h6 > p:nth-child(1){
 	margin: 0 auto !important;
 	padding: 0!important;
-	transform: translateY(-4px);
+	line-height: normal;
 }
 div.menuWriteUps.diminutive.lH1 > p:nth-child(1){
 	display: none;
 }
 .memuTitles{
 	height: min-content;
+}
+#pizzaGrid{
+	display: grid;
+	grid-template-columns: 1.1em 1.1em;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 #eatToggle,
 #drinkToggle{
@@ -1116,9 +1124,35 @@ body.drinksBg{
 	max-height: 400px;
 	min-height: 250px;
 }
-.dolphy{
-	transform: translateY(7px);
-}
 a.stretched-link.tW:hover{
 	background-color: transparent!important;
 }
+.basil{
+	position: absolute;
+	top: 0px;
+	right:65%;
+	width: 120px;
+	z-index: 0!important;
+	opacity: 90%;
+}
+.bento{
+	position: absolute;
+	top: -130px;
+	right:39%;
+	width: 254px;
+	z-index: 0!important;
+	opacity: 90%;
+}
+.pizzaCase h3{
+	text-shadow: -1px -1px 0px white;
+}
+.nT{
+	transform: translateY(0px)!important;
+}
+.titleRight{
+	transform: rotate(27deg);
+}
+.hangingindent {
+	padding-left: 1.2em ;
+	text-indent: -1.2em ;
+  }

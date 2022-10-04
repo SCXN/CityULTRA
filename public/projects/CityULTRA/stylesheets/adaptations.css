@@ -5,6 +5,9 @@
   }
 }
 @media (max-width:310px){
+    #intro{
+        font-size: 11pt;
+    }
     .almostCray{
         font-size: 33pt;
     }
@@ -25,6 +28,9 @@
     }
 }
 @media (max-width: 575px){
+    #intro{
+        border: none;
+    }
     footer.mH{
         min-height: 100vh;
         background-color: black;
@@ -47,6 +53,12 @@
     }
 }
 @media (max-width: 767px){
+    li.flex.sC.mt-0.pt-0.wash1{
+        filter: opacity(100%);
+    }
+    .dolphy{
+		transform: translateX(18px);
+	}
     .almostCray{
         font-size: 48pt;
     }
@@ -150,6 +162,10 @@
     }
 }
 @media (max-height: 500px){
+    #collapseEat a,
+    #drink a{
+	transform: translateY(-100px);
+}
     footer.mH{
         min-height: 100vh;
         background-color: black;
